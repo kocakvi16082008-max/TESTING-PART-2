@@ -1,0 +1,166 @@
+body {
+    background: radial-gradient(circle, #ff6b6b, #4ecdc4);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.awalan {
+    background: radial-gradient(circle, #9688f2, #4930f2);
+    width: 75%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.ul-awal {
+    background-color: gray;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-awal {
+    list-style-type: none;
+    padding: 12px;
+    margin: 4px;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.description-keahlian{
+    color: black;
+    font-size: 20px;
+}
+
+.a-awal {
+    color: white;
+    text-decoration: none;
+    width: 40%;
+    height: 15vh;
+}
+
+.li-awal:hover {
+    background-color: blue;
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 12px;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-weight: bold;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4930f2;
+    background-color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-kirim {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-kirim:hover {
+    background-color: #d0d0d0;
+}
+
+.btn-kirim:active {
+    background-color: #c0c0c0;
+}
+
+.hobi-nav {
+    background-color: #d1e9ff;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+}
+
+.social a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}

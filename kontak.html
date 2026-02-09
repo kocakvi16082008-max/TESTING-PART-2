@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Muhamad Nelvino Sya'ban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="awalan">
+        <ul class="ul-awal">
+            <li class="li-awal">
+                <a href="index.html" class="a-awal">BERANDA</a>
+            </li>
+            <li class="li-awal">
+                <a href="profil.html" class="a-awal">PROFIL</a>
+            </li>
+            <li class="li-awal">
+                <a href="keahlian.html" class="a-awal">KEAHLIAN</a>
+            </li>
+            <li class="li-awal active">
+                <a href="kontak.html" class="a-awal">KONTAK</a>
+            </li>
+        </ul>
+
+        <h1>Hubungi Saya 📞</h1>
+
+        <p class="description">
+            Hai! Kamu mau mengobrol secara privat dengan saya? Silakan isi form di bawah ini atau hubungi kontak yang tersedia.
+        </p>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>📧 Email</h3>
+                <p>Nelvino@email.com</p>
+            </div>
+            <div class="contact-card">
+                <h3>📱 WhatsApp</h3>
+                <p>+62 858-1109-7535</p>
+            </div>
+            <div class="contact-card">
+                <h3>📍 Lokasi</h3>
+                <p>Indonesia</p>
+            </div>
+        </div>
+
+        <h2>Kirim Pesan</h2>
+
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subjek">Subjek</label>
+                <input type="text" id="subjek" name="subjek" placeholder="Masukkan subjek pesan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-kirim">Kirim Pesan</button>
+        </form>
+
+        <div id="successMessage" class="success-message" style="display: none;">
+            ✅ Pesan berhasil dikirim! Terima kasih sudah menghubungi saya.
+        </div>
+
+        <div class="social-links">
+            <h3>Atau hubungi saya melalui:</h3>
+            <div class="social-buttons">
+                <a href="https://www.instagram.com/nelvino16?igsh=MTdnano5anpzajFiMA==" target="_blank" class="social-btn instagram">
+                    📷 Instagram
+                </a>
+                <a href="https://github.com/kocakvi16082008-max" target="_blank" class="social-btn github">
+                    💻 GitHub
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn linkedin">
+                    💼 Telegram
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 - Mamsens | Muhamad Nelvino Sya'ban
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript untuk handle form submit
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah form submit default
+            
+            // Ambil data dari form
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const subjek = document.getElementById('subjek').value;
+            const pesan = document.getElementById('pesan').value;
+            
+            // Tampilkan pesan sukses
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Reset form
+            this.reset();
+            
+            // Console log data (untuk testing)
+            console.log('Form Data:', {nama, email, subjek, pesan});
+            
+            // Sembunyikan pesan sukses setelah 5 detik
+            setTimeout(function() {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+        });
+    </script>
+
+</body>
+</html>
